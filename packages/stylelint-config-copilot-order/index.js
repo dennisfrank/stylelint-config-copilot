@@ -35,23 +35,6 @@ module.exports = {
     'order/properties-order': [
       'content',
       {
-        groupName: 'positioning',
-        properties: [
-          'position',
-          'z-index',
-        ],
-      },
-      {
-        groupName: 'position-properties',
-        order: 'flexible',
-        properties: [
-          'left',
-          'right',
-          'top',
-          'bottom',
-        ],
-      },
-      {
         groupName: 'display',
         properties: [
           'display',
@@ -110,12 +93,6 @@ module.exports = {
         ],
       },
       {
-        groupName: 'float',
-        properties: [
-          'float',
-        ],
-      },
-      {
         groupName: 'dimensions',
         properties: [
           'width',
@@ -127,13 +104,9 @@ module.exports = {
         ],
       },
       {
-        groupName: 'transforms',
-        order: 'flexible',
+        groupName: 'float',
         properties: [
-          'transform',
-          'transform-box',
-          'transform-origin',
-          'transform-style',
+          'float',
         ],
       },
       {
@@ -168,6 +141,33 @@ module.exports = {
         ],
       },
       {
+        groupName: 'positioning',
+        properties: [
+          'position',
+          'z-index',
+        ],
+      },
+      {
+        groupName: 'position-properties',
+        order: 'flexible',
+        properties: [
+          'top',
+          'bottom',
+          'left',
+          'right',
+        ],
+      },
+      {
+        groupName: 'transforms',
+        order: 'flexible',
+        properties: [
+          'transform',
+          'transform-box',
+          'transform-origin',
+          'transform-style',
+        ],
+      },
+      {
         groupName: 'borders',
         order: 'flexible',
         properties: [
@@ -195,9 +195,11 @@ module.exports = {
           'letter-spacing',
           'line-height',
           'text-align',
+          'text-transform',
           'word-break',
           'word-spacing',
           'word-wrap',
+          'white-space',
         ],
       },
       {
@@ -210,6 +212,38 @@ module.exports = {
           'hyphenate-limit-last',
           'hyphenate-limit-lines',
           'hyphenate-limit-zone',
+        ],
+      },
+      {
+        groupName: 'lists',
+        order: 'flexible',
+        properties: [
+          'list-style',
+          'list-style-image',
+          'list-style-position',
+          'list-style-type',
+        ],
+      },
+      {
+        groupName: 'background',
+        order: 'flexible',
+        properties: [
+          'background',
+          'background-attachment',
+          'background-blend-mode',
+          'background-clip',
+          'background-color',
+          'background-image',
+          'background-origin',
+          'background-position',
+          'background-repeat',
+          'background-size',
+        ],
+      },
+      {
+        groupName: 'color',
+        properties: [
+          'color',
         ],
       },
       {
@@ -235,28 +269,6 @@ module.exports = {
           'animation-name',
           'animation-play-state',
           'animation-timing-function',
-        ],
-      },
-      {
-        groupName: 'background',
-        order: 'flexible',
-        properties: [
-          'background',
-          'background-attachment',
-          'background-blend-mode',
-          'background-clip',
-          'background-color',
-          'background-image',
-          'background-origin',
-          'background-position',
-          'background-repeat',
-          'background-size',
-        ],
-      },
-      {
-        groupName: 'color',
-        properties: [
-          'color',
         ],
       },
     ],
